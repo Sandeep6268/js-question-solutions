@@ -117,3 +117,121 @@ console.log(amount)
 // question number 2 end
 
 
+
+
+
+
+// question number 3 start
+
+Q3 Make 'INR denomination' program?
+
+
+
+let amount = Number(prompt('enter amount '))
+
+let total_notes = 0
+if (amount>=500) {
+    let notes = Math.floor(amount/500)
+    amount = amount - (notes*500)
+    total_notes += notes
+}
+if (amount>=200 && amount<500) {
+    let notes = Math.floor(amount/200)
+    amount = amount - (notes*200)
+    total_notes += notes
+}
+if (amount>=100 && amount<200) {
+    let notes = Math.floor(amount/100)
+    amount = amount - (notes*100)
+    total_notes += notes
+}
+if (amount>=50 && amount<100) {
+    let notes = Math.floor(amount/50)
+    amount = amount - (notes*50)
+    total_notes += notes
+}
+if (amount>=20 && amount<50){
+    let notes = Math.floor(amount/20)
+    amount = amount - (notes*20)
+    total_notes += notes
+}
+if (amount>=10 && amount<20){
+    let notes = Math.floor(amount/10)
+    amount = amount - (notes*10)
+    total_notes += notes
+}
+if (amount>=5 && amount<10){
+    let notes = Math.floor(amount/5)
+    amount = amount - (notes*5)
+    total_notes += notes
+}
+if (amount>=2 && amount<5){
+    let notes = Math.floor(amount/2)
+    amount = amount - (notes*2)
+    total_notes += notes
+}
+if (amount>=1 && amount<2){
+    let notes = Math.floor(amount/1)
+    amount = amount - (notes*1)
+    total_notes += notes
+}
+console.log(total_notes,'notes')
+
+
+------------------ OR ---------------------------------------
+
+
+
+let amount = Number(prompt('enter amount '))
+
+let total_notes = 0
+if (amount>=500) {
+    let notes = Math.floor(amount/500)
+    amount = amount % 500
+    total_notes += notes
+}
+if (amount>=200 && amount<500) {
+    let notes = Math.floor(amount/200)
+    amount = amount %200
+    total_notes += notes
+}
+if (amount>=100 && amount<200) {
+    let notes = Math.floor(amount/100)
+    amount = amount %100
+    total_notes += notes
+}
+if (amount>=50 && amount<100) {
+    let notes = Math.floor(amount/50)
+    amount = amount %50
+    total_notes += notes
+}
+if (amount>=20 && amount<50){
+    let notes = Math.floor(amount/20)
+    amount = amount %20
+    total_notes += notes
+}
+if (amount>=10 && amount<20){
+    let notes = Math.floor(amount/10)
+    amount = amount %10
+    total_notes += notes
+}
+if (amount>=5 && amount<10){
+    let notes = Math.floor(amount/5)
+    amount = amount %5
+    total_notes += notes
+}
+if (amount>=2 && amount<5){
+    let notes = Math.floor(amount/2)
+    amount = amount %2
+    total_notes += notes
+}
+if (amount>=1 && amount<2){
+    let notes = Math.floor(amount/1)
+    amount = amount %1
+    total_notes += notes
+}
+console.log(total_notes,'notes')
+
+// question number 3 end
+
+
