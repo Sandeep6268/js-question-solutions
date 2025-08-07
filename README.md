@@ -252,4 +252,159 @@ console.log('total notes :- ',total_notes,'notes')
 
 // question number 3 end
 
+// question number 4 start
 
+Q4 write a program to calculate sum of natural number ?
+
+
+let input = prompt('Provide a no.')
+
+let num = Number(input)
+if (input===null) {
+  console.log('cancelled')
+}
+else{
+  
+if (isNaN(num)) {
+  console.log('invalid input')
+}else{
+  if (num<0) {
+    console.log('it is a negative no')
+  }
+  else if (num===0) {
+    console.log('it is zero')
+  }
+  else{
+    let total = 0
+    for (let i = 0; i <= num; i++) {
+    total += i
+    
+    }
+    console.log('sum of natural no :- ',total)
+  }
+}
+}
+
+
+// question number 4 end
+
+
+
+// question number 5 start
+
+Q5 write a program to calculate factorial of a given number?
+
+
+let input = prompt('Provide a no.')
+
+let num = Number(input)
+if (input===null) {
+  console.log('cancelled')
+}
+else{
+  
+if (isNaN(num)) {
+  console.log('invalid input')
+}else{
+  if (num<0) {
+    console.log('it is a negative no')
+  }
+  else if (num===0) {
+    console.log('it is zero')
+  }
+  else{
+    let fact = 1
+    for (let i = 1; i <= num; i++) {
+    fact *= i
+    
+    }
+    console.log('factorial of ',num,' :- ',fact)
+  }
+}
+}
+
+// question number 5 end
+
+
+// question number 6 start 
+
+Q6 write a program to find factors of given number?
+
+
+
+let input = prompt('enter a no :- ')
+let num = Number(input)
+
+if (input===null) {
+  console.log('cancelled')
+}
+else{
+  
+  if (isNaN(num)) {
+    console.log('invalid input')
+  }else{
+    if (num<0) {
+        console.log('it is a negative no')
+      }
+      else if (num===0) {
+        console.log('it is zero')
+      }
+    else{
+      for (let i = 1; i <= Math.floor(num/2); i++) {
+      if (num%i === 0){
+        console.log(i)
+      } 
+    }
+    console.log(num)
+    }
+  }
+}
+
+
+// question number 6 end
+
+
+//question number 7 start
+
+Q7 write a program to find prime number?
+
+let input = prompt('enter a no :- ')
+let num = Number(input)
+
+if (input===null) {
+  console.log('cancelled')
+}
+else{
+  
+  if (isNaN(num)) {
+    console.log('invalid input')
+  }else{
+    if (num<0) {
+        console.log('it is a negative no')
+      }
+      else if (num===0) {
+        console.log('it is zero')
+      }
+    else{
+      console.log(isPrime(num))
+    }
+  }
+}
+
+function isPrime(n) {
+  if (n===2) return true
+    if (n%2===0) return false
+    for (let i = 3; i <= Math.floor(Math.sqrt(n));  i+=2) {
+    if (n===1) return false
+      if(n%i===0) return false
+    }
+    return true
+  
+}
+
+// question number 7 end
+
+
+
+
+ 
