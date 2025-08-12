@@ -405,6 +405,112 @@ function isPrime(n) {
 // question number 7 end
 
 
+// question number 8 start
+
+Q8 write a program to calculate sum of digits?
+
+
+
+let input = prompt('enter a no :- ')
+let num = Number(input)
+
+if (input===null) {
+  console.log('cancelled')
+}
+else{
+  
+  if (isNaN(num)) {
+    console.log('invalid input')
+  }else{
+    if (num>0) {
+        sum = 0
+        while(num>0){
+            rem = num%10
+            sum += rem
+            num = Math.floor(num/10)
+        }
+        console.log(sum)
+      }
+    }
+  }
+
+
+// question number 8 end
+
+
+// question number 9 start
+
+Q9 Make a program to reverse the digit?
+
+let input = prompt("enter the number");
+if (input === null) {
+  console.log("cancel");
+} else {
+  let num = Number(input);
+  if (isNaN(num)) {
+    console.log("invalid input");
+  } else {
+    if (num > 0) {
+      let rev = 0;
+      while (num > 0) {
+        rem = num % 10;
+        rev = rev * 10 + rem;
+        num = Math.floor(num / 10);
+      }
+      console.log(rev);
+    } else {
+      console.log("number should be positive or greater than 0");
+    }
+  }
+}
+
+
+
+// question number 9 end
+
+
+
+//question number 10 start
+
+Q10 Make a program to check the given number is strong or not?
+
+
+let input = prompt("enter the number");
+if (input === null) {
+  console.log("cancel");
+} else {
+  let num = Number(input);
+  if (isNaN(num)) {
+    console.log("invalid input");
+  } else {
+    if (num > 0) {
+      let copy = num;
+      let sum = 0;
+      while (num > 0) {
+        rem = num % 10;
+        let fact = 1;
+        for (let i = 1; i <= rem; i++) {
+          fact *= i;
+        }
+        sum = sum + fact;
+        num = Math.floor(num / 10);
+      }
+      if (copy === sum) {
+        console.log("strong number");
+      } else {
+        console.log("not strong number");
+      }
+    } else {
+      console.log("number should be positive or greater than 0");
+    }
+  }
+}
+
+
+
+// question number 10 end
+
+
 
 
  
